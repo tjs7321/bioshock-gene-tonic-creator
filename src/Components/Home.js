@@ -1,6 +1,6 @@
 import React from "react";
 
-function Home(){
+function Home({rapture}){
     return(
     <>This is the Home Page</>
     )

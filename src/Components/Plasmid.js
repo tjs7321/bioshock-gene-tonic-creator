@@ -1,6 +1,6 @@
 import React from "react";
 
-function Plasmid(){
+function Plasmid({rapture}){
     return(
     <>
     </>
