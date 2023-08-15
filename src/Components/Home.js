@@ -2,7 +2,7 @@ import React from "react";
 
 function Home({rapture}){
     return(
-    <>This is the Home Page</>
+    <>{rapture ? "No Gods or Kings. Only Man." : "Another Ark, for Another Time."}</>
     )
 }
 

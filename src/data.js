@@ -14,8 +14,8 @@ const plasmids = [
             columbia: "Sends a jolt of electricity from your fingertips"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/3/35/Electro.png/revision/latest?cb=20100125014940",
-            columbia: "https://static.wikia.nocookie.net/bioshock/images/f/fe/ShockJockeyIcon.png/revision/latest/scale-to-width-down/250?cb=20130411040145"
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/3/35/Electro.png",
+            columbia: "https://static.wikia.nocookie.net/bioshock/images/f/fe/ShockJockeyIcon.png"
         }
     },
     {
@@ -33,8 +33,8 @@ const plasmids = [
             columbia: "Throws a flaming projectile which detonates"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/6/6b/Inc.png/revision/latest?cb=20100125034122",
-            columbia: "https://static.wikia.nocookie.net/bioshock/images/a/ad/DevilsKissIcon.png/revision/latest/scale-to-width-down/250?cb=20130411040144"
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/6/6b/Inc.png",
+            columbia: "https://static.wikia.nocookie.net/bioshock/images/a/ad/DevilsKissIcon.png"
         }
     },
     {
@@ -52,8 +52,8 @@ const plasmids = [
             columbia: "Sics a murder of crows on the target"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/7/79/Insect.png/revision/latest?cb=20100125034618",
-            columbia: "https://static.wikia.nocookie.net/bioshock/images/3/34/MurderOfCrowsIcon.png/revision/latest/scale-to-width-down/250?cb=20130411040144"
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/7/79/Insect.png",
+            columbia: "https://static.wikia.nocookie.net/bioshock/images/3/34/MurderOfCrowsIcon.png"
         }
     },
     {
@@ -71,8 +71,8 @@ const plasmids = [
             columbia: "Throws a ball of dry ice at the target"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/0/01/Cryo.png/revision/latest?cb=20100125035304",
-            columbia: "https://static.wikia.nocookie.net/bioshock/images/f/f9/Old_Man_Winter_Icon.png/revision/latest?cb=20131114030213"
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/0/01/Cryo.png",
+            columbia: "https://static.wikia.nocookie.net/bioshock/images/f/f9/Old_Man_Winter_Icon.png"
         }
     },
     {
@@ -90,8 +90,8 @@ const plasmids = [
             columbia: "Cracks the ground and sends enemies in the air"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/a/a9/Trap.png/revision/latest?cb=20100125033540",
-            columbia: "https://static.wikia.nocookie.net/bioshock/images/e/ea/BuckingBroncoIcon.png/revision/latest/scale-to-width-down/250?cb=20130411040143"
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/a/a9/Trap.png",
+            columbia: "https://static.wikia.nocookie.net/bioshock/images/e/ea/BuckingBroncoIcon.png"
         }
     },
     {
@@ -109,8 +109,8 @@ const plasmids = [
             columbia: "Causes the target to attack any nearby enemies"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/9/9b/Befriend.png/revision/latest?cb=20100125033830",
-            columbia: "https://static.wikia.nocookie.net/bioshock/images/2/23/PossessionIcon.png/revision/latest/scale-to-width-down/250?cb=20130411040144"
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/9/9b/Befriend.png",
+            columbia: "https://static.wikia.nocookie.net/bioshock/images/2/23/PossessionIcon.png"
         }
     },
     {
@@ -128,8 +128,8 @@ const plasmids = [
             columbia: "Throws all targets in front of the user back with a watery tendril"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/f/fc/97.png/revision/latest?cb=20100113051545",
-            columbia: "https://static.wikia.nocookie.net/bioshock/images/a/ac/UndertowIcon.png/revision/latest/scale-to-width-down/250?cb=20130411040145"
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/f/fc/97.png",
+            columbia: "https://static.wikia.nocookie.net/bioshock/images/a/ac/UndertowIcon.png"
         }
     },
     {
@@ -147,8 +147,10 @@ const plasmids = [
             columbia: "Pulls the user towards a target at ramming speed"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/f/fa/Areo_Dash.png/revision/latest?cb=20110217090657",
-            columbia: "https://static.wikia.nocookie.net/bioshock/images/9/9a/ChargeIcon.png/revision/latest/scale-to-width-down/250?cb=20130411040144"
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/f/fa/Areo_Dash.png",
+            columbia: "https://static.wikia.nocookie.net/bioshock/images/9/9a/ChargeIcon.png"
         }
     },
 ]
+
+export {plasmids}
