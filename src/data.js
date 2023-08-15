@@ -152,3 +152,5 @@ const plasmids = [
         }
     },
 ]
+
+export {plasmids}

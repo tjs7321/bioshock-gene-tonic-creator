@@ -1,16 +1,16 @@
 import React from "react";
 import Plasmid from "./Plasmid";
-import { plasmids } from "../data"
+import {plasmids} from "../data"
 
 function Showroom({rapture}){
 
-console.log(plasmids)
-
     return(
     <>
-        <Plasmid
+        {plasmids.map((plasmid) => <Plasmid
         rapture={rapture}
-        />
+        {...plasmid}
+        key={plasmid.id}
+        />)}
     </>
     )
 }

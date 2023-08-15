@@ -5,7 +5,6 @@ import Home from './Home';
 import NavBar from './NavBar';
 import Showroom from './Showroom';
 import Creator from './Creator';
-import plasmids from "../data"
 
 function App() {
 
@@ -14,8 +13,6 @@ function App() {
   function handleRaptureToggle(){
     setRapture(!rapture)
   }
-
-  console.log(plasmids)
 
   return (
     <div>
