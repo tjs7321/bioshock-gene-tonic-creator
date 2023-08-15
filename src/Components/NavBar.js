@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar(){
+function NavBar({handleRaptureToggle}){
 
     const linkStyles = {
         display: "inline-block",
@@ -12,6 +12,7 @@ function NavBar(){
         textDecoration: "none",
         color: "white",
     };
+
 
 
     return (
@@ -37,6 +38,7 @@ function NavBar(){
             >
             Creator
             </NavLink>
+            <button onClick={handleRaptureToggle}>Toggle Columbia/Rapture</button>
         </div>
         )
 }

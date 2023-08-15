@@ -1,8 +1,17 @@
 import React from "react";
+import Plasmid from "./Plasmid";
+import { plasmids } from "../data"
 
-function Showroom(){
+function Showroom({rapture}){
+
+console.log(plasmids)
+
     return(
-    <>This is the Showroom</>
+    <>
+        <Plasmid
+        rapture={rapture}
+        />
+    </>
     )
 }
 
