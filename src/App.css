@@ -37,6 +37,13 @@
   }
 }
 
+.navbar{
+  display: flex;
+  position: fixed;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 .navbarHeaders {
   display: inline-block;
   width: 30%;
@@ -53,6 +60,8 @@
   justify-content: flex-smart;
   align-items: center;
   gap: 1rem;
+  height: 100vh;
+  padding-top: 30px; /*subject to change*/
 }
 
 .title {
@@ -72,7 +81,27 @@
   flex-wrap: wrap;
 }
 
-.plasmidCard {
+.plasmidCardRapture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  gap: 1rem;
+  background-color: #E1C16E;
+  border-radius: 10px;
+  width: 250px;
+  height: 400px;
+  flex-shrink: 0;
+  filter: drop-shadow(1px, 2px, 0.2rem gray);
+  background-image: url("https://openclipart.org/image/800px/233557");
+  background-size: cover;
+  background-repeat:round;
+  margin: 30px;
+}
+
+
+.plasmidCardColumbia {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,10 +110,22 @@
   gap: 1rem;
   background-color: #fffec4;
   border-radius: 10px;
-  width: 200px;
+  width: 250px;
   height: 400px;
   flex-shrink: 0;
   filter: drop-shadow(1px, 2px, 0.2rem gray);
+  background-image: url("https://clipart-library.com/images/yikrkLMaT.png");
+  background-size: cover;
+  background-repeat:round;
+  margin: 30px;
+}
+
+.plasmidTitleRapture{
+  font-weight: bold;
+}
+
+.plasmidTitleColumbia{
+  font-weight: bold;
 }
 
 .tagline {
@@ -108,4 +149,29 @@
   width: 10rem;
   height: 10rem;
   object-fit: contain;
+  border-radius: 50%;
+}
+
+/*/////////////////////////////////////
+/////////////BackgroundImages/////////
+///////////////////////////////////*/
+
+.raptureBackground {
+  background-image: url("https://cdn.wallpapersafari.com/48/58/pExYzO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.columbiaBackground {
+  background-image: url("./columbiaPicAlt.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
 }

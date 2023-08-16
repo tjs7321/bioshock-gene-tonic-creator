@@ -5,24 +5,24 @@ import "../App.css";
 function NavBar({handleRaptureToggle}){
 
     return (
-        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+        <nav className="navbar">
             <NavLink
             to="/" exact
-            className="navbarHeaders"
+            // className="navbarHeaders"
             activeStyle={{background: "darkblue"}}
             >
             Home
             </NavLink>
             <NavLink
             to="/showroom" exact
-            className="navbarHeaders"
+            // className="navbarHeaders"
             activeStyle={{background: "darkblue"}}
             >
             Showroom
             </NavLink>
             <NavLink
             to="/creator" exact
-            className="navbarHeaders"
+            // className="navbarHeaders"
             activeStyle={{background: "darkblue"}}
             >
             Creator
