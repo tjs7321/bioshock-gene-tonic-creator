@@ -16,7 +16,7 @@ function NavBar({handleRaptureToggle}){
 
 
     return (
-        <div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
             <NavLink
             to="/" exact
             style={linkStyles}
@@ -39,7 +39,7 @@ function NavBar({handleRaptureToggle}){
             Creator
             </NavLink>
             <button onClick={handleRaptureToggle}>Toggle Columbia/Rapture</button>
-        </div>
+        </nav>
         )
 }
 

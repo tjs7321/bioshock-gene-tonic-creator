@@ -1,0 +1,42 @@
+{
+  "createdPlasmids": [
+      {
+          "id": 1,
+          "title": {
+              "rapture": "Break Ground",
+              "columbia": "Shatter Earth"
+          },
+          "tagline": {
+              "rapture": "Get Quaked",
+              "columbia": "Open the Earth"
+          },
+          "effect": {
+              "rapture": "Breaks a hole in the ground",
+              "columbia": "Opens the Earth to swallow enemies"
+          },
+          "image": {
+              "rapture": "https://d3pc1xvrcw35tl.cloudfront.net/images/1103x827/earthquake1_202009487529.jpg",
+              "columbia": "https://p1.hiclipart.com/preview/159/777/95/cartoon-nature-background-earthquake-natural-disaster-drawing-line-technology-angle-png-clipart.jpg"
+          }
+      },
+      {
+        "id": 2,
+        "title": {
+            "rapture": "Kick Ass",
+            "columbia": "Still Kicking Ass"
+        },
+        "tagline": {
+            "rapture": "Get Wrecked",
+            "columbia": "To the Dome"
+        },
+        "effect": {
+            "rapture": "Wrecks the target",
+            "columbia": "Domes the target"
+        },
+        "image": {
+            "rapture": "https://p1.hiclipart.com/preview/212/944/64/drawing-of-family-sheep-goat-cartoon-horn-goats-head-livestock-png-clipart.jpg",
+            "columbia": "https://p1.hiclipart.com/preview/482/176/1008/family-logo-sheep-horn-goats-bighorn-argali-head-cartoon-png-clipart.jpg"
+        }
+    }
+  ]
+}
