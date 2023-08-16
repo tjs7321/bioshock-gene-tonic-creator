@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import NewPlasmidForm from "./NewPlasmidForm";
+import CreatedPlasmids from "./CreatedPlasmids";
 
 function Creator({rapture}){
 
@@ -22,6 +23,11 @@ function Creator({rapture}){
     />
     <div>
         <h2>Creations</h2>
+        {createdPlasmids.map((plasmid) =>
+        <CreatedPlasmids
+        rapture={rapture}
+        {...plasmid}
+        />)}
     </div>
     </>
     )
