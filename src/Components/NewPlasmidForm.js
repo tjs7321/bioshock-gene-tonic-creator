@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function NewPlasmidForm({rapture}){
+function NewPlasmidForm({rapture, baseURL}){
     const plasmidFormEmpty = {
         title: {rapture: "", columbia: ""},
         tagline: {rapture: "", columbia: ""},

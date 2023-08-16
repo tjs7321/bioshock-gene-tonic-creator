@@ -20,6 +20,7 @@ function Creator({rapture}){
     <img src={rapture ? "https://static.wikia.nocookie.net/villains/images/6/6b/FontaineFuturisticsLogoBS2.png" : "https://static.wikia.nocookie.net/bioshock/images/a/a7/Fink_Manufacturing_logo.png"}/>
     <NewPlasmidForm
     rapture={rapture}
+    baeURL={baseURL}
     />
     <div>
         <h2>Creations</h2>
