@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const 
+
 
 function NewPlasmidForm(){
     return (

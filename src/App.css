@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+/* Add spacing between tagline and effect */
+.plasmid {
+  margin-bottom: 20px;
+}
+
+.effect {
+  margin-top: 10px; /* Adjust this value as needed */
+}
+
+/* Style the table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style table header cells */
+.table thead th {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Set the height and width of table data cells */
+.table tbody td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  height: 100px; /* Adjust this value as needed for the row height */
+  width: 170px; /* Adjust this value as needed for the cell width */
+}
+
+
+/* Alternate row coloring */
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
