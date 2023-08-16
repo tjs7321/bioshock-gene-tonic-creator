@@ -23,15 +23,15 @@ function Creator({rapture}){
     }
 
     return(
-    <>{rapture ? "Welcome to Fontaine Futuristics" : "Welcome to Fink Manufacturing"}
+    <div className="mainContainer">{rapture ? "Welcome to Fontaine Futuristics" : "Welcome to Fink Manufacturing"}
     <img src={rapture ? "https://static.wikia.nocookie.net/villains/images/6/6b/FontaineFuturisticsLogoBS2.png" : "https://static.wikia.nocookie.net/bioshock/images/a/a7/Fink_Manufacturing_logo.png"}/>
     <NewPlasmidForm
     rapture={rapture}
     baseURL={baseURL}
     addNewPlasmid={addNewPlasmid}
     />
-    <div>
-        <h2>Creations</h2>
+    <div className="plasmidContainer">
+        <h2 className="title">Creations</h2>
         {createdPlasmids.map((plasmid) =>
         <CreatedPlasmids
         rapture={rapture}
@@ -41,7 +41,7 @@ function Creator({rapture}){
         baseURL={baseURL}
         />)}
     </div>
-    </>
+    </div>
     )
 }
 

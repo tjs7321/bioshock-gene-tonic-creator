@@ -89,12 +89,12 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     </div>
 
     const plasmidCard =
-    <div>
-        <h1>{rapture ? editedPlasmid.title.rapture : editedPlasmid.title.columbia}</h1>
-        <img src={rapture ? editedPlasmid.image.rapture : editedPlasmid.image.columbia} alt="plasmid/vigor icon"/>
-        <p>{rapture ? editedPlasmid.tagline.rapture : editedPlasmid.tagline.columbia}</p>
-        <p>{rapture ? editedPlasmid.effect.rapture : editedPlasmid.effect.columbia}</p>
-        <button onClick={()=>handleClick(id)}>Delete</button>
+    <div className="plasmidCard">
+        <h1 className="title">{rapture ? editedPlasmid.title.rapture : editedPlasmid.title.columbia}</h1>
+        <img className="plasmidImage" src={rapture ? editedPlasmid.image.rapture : editedPlasmid.image.columbia} alt="plasmid/vigor icon"/>
+        <p className="tagline">{rapture ? editedPlasmid.tagline.rapture : editedPlasmid.tagline.columbia}</p>
+        <p className="tagline">{rapture ? editedPlasmid.effect.rapture : editedPlasmid.effect.columbia}</p>
+        <button className="button" onClick={()=>handleClick(id)}>Delete</button>
         </div>
 
     function handleTitleEdit(e){
