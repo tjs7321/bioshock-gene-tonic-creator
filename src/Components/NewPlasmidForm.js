@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function NewPlasmidForm({rapture, baseURL}){
+function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
     const plasmidFormEmpty = {
         title: {rapture: "", columbia: ""},
         tagline: {rapture: "", columbia: ""},
@@ -10,6 +10,13 @@ function NewPlasmidForm({rapture, baseURL}){
     
     function handleFormSubmit(e){
         e.preventDefault()
+        fetch(baseURL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newPlasmid)})
+        .then(r=>r.json())
+        .then(r=>addNewPlasmid(r))
+        setNewPlasmid(plasmidFormEmpty)
     }
     
     function handleTitleEdit(e){
@@ -32,8 +39,6 @@ function NewPlasmidForm({rapture, baseURL}){
         setNewPlasmid(newPlasmid =>
             ({...newPlasmid, image: {...newPlasmid.image, [name]:value}}))
     }
-
-    console.log(newPlasmid)
 
     
     return (

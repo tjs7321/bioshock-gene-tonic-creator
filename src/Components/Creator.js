@@ -13,14 +13,17 @@ function Creator({rapture}){
         .then(r=>setCreatedPlasmids(r))
     },[])
 
-    console.log(createdPlasmids)
+    function addNewPlasmid(r){
+        setCreatedPlasmids([...createdPlasmids, r])
+    }
 
     return(
     <>{rapture ? "Welcome to Fontaine Futuristics" : "Welcome to Fink Manufacturing"}
     <img src={rapture ? "https://static.wikia.nocookie.net/villains/images/6/6b/FontaineFuturisticsLogoBS2.png" : "https://static.wikia.nocookie.net/bioshock/images/a/a7/Fink_Manufacturing_logo.png"}/>
     <NewPlasmidForm
     rapture={rapture}
-    baeURL={baseURL}
+    baseURL={baseURL}
+    addNewPlasmid={addNewPlasmid}
     />
     <div>
         <h2>Creations</h2>
