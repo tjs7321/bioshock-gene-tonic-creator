@@ -15,7 +15,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className={rapture?'raptureBackground':'columbiaBackground'}>
       <NavBar
       handleRaptureToggle={handleRaptureToggle}
       />

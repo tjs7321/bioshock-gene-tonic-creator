@@ -2,8 +2,8 @@ import React from "react";
 
 function Plasmid({ rapture, title, tagline, effect, image }) {
   return (
-    <div className="plasmidCard">
-      <h1 className="title">{rapture ? title.rapture : title.columbia}</h1>
+    <div className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
+      <p className={rapture?"plasmidTitleRapture":"plasmidTitleColumbia"}>{rapture ? title.rapture : title.columbia}</p>
       <img className="plasmidImage"
         src={rapture ? image.rapture : image.columbia}
         alt="plasmid/vigor icon"

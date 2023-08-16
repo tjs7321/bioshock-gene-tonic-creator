@@ -89,7 +89,7 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     </div>
 
     const plasmidCard =
-    <div className="plasmidCard">
+    <div className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
         <h1 className="title">{rapture ? editedPlasmid.title.rapture : editedPlasmid.title.columbia}</h1>
         <img className="plasmidImage" src={rapture ? editedPlasmid.image.rapture : editedPlasmid.image.columbia} alt="plasmid/vigor icon"/>
         <p className="tagline">{rapture ? editedPlasmid.tagline.rapture : editedPlasmid.tagline.columbia}</p>
