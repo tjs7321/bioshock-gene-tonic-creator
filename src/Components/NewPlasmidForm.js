@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 
-
 function NewPlasmidForm({rapture}){
     const plasmidFormEmpty = {
         title: {rapture: "", columbia: ""},
