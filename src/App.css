@@ -46,40 +46,66 @@
   color: white;
 }
 
-/* Add spacing between tagline and effect */
-.plasmid {
-  margin-bottom: 20px;
+.mainContainer {
+  /* background-color: #D7A184; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-smart;
+  align-items: center;
+  gap: 1rem;
 }
 
-.effect {
-  margin-top: 10px; /* Adjust this value as needed */
-}
-
-/* Style the table */
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-/* Style table header cells */
-.table thead th {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  padding: 10px;
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
   text-align: center;
+  margin: 0;
 }
 
-/* Set the height and width of table data cells */
-.table tbody td {
-  border: 1px solid #dee2e6;
-  padding: 10px;
-  height: 100px; /* Adjust this value as needed for the row height */
-  width: 170px; /* Adjust this value as needed for the cell width */
+.plasmidContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin: 0 0.5rem;
+  flex-wrap: wrap;
 }
 
+.plasmidCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  gap: 1rem;
+  background-color: #fffec4;
+  border-radius: 10px;
+  width: 200px;
+  height: 400px;
+  flex-shrink: 0;
+  filter: drop-shadow(1px, 2px, 0.2rem gray);
+}
 
-/* Alternate row coloring */
-.table tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+.tagline {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  padding: 0.4rem 0.9rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #cbffa9;
+}
+
+.plasmidImage {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
 }

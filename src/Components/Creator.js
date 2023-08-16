@@ -13,24 +13,35 @@ function Creator({rapture}){
         .then(r=>setCreatedPlasmids(r))
     },[])
 
-    console.log(createdPlasmids)
+    function addNewPlasmid(r){
+        setCreatedPlasmids([...createdPlasmids, r])
+    }
+
+    function handleClick(id){
+        fetch(baseURL+'/'+id, {method: 'DELETE'})
+        setCreatedPlasmids(createdPlasmids.filter((plasmid) => plasmid.id !== id))
+    }
 
     return(
-    <>{rapture ? "Welcome to Fontaine Futuristics" : "Welcome to Fink Manufacturing"}
+    <div className="mainContainer">{rapture ? "Welcome to Fontaine Futuristics" : "Welcome to Fink Manufacturing"}
     <img src={rapture ? "https://static.wikia.nocookie.net/villains/images/6/6b/FontaineFuturisticsLogoBS2.png" : "https://static.wikia.nocookie.net/bioshock/images/a/a7/Fink_Manufacturing_logo.png"}/>
     <NewPlasmidForm
     rapture={rapture}
-    baeURL={baseURL}
+    baseURL={baseURL}
+    addNewPlasmid={addNewPlasmid}
     />
-    <div>
-        <h2>Creations</h2>
+    <div className="plasmidContainer">
+        <h2 className="title">Creations</h2>
         {createdPlasmids.map((plasmid) =>
         <CreatedPlasmids
         rapture={rapture}
         {...plasmid}
+        handleClick={handleClick}
+        plasmid={plasmid}
+        baseURL={baseURL}
         />)}
     </div>
-    </>
+    </div>
     )
 }
 

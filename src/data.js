@@ -124,8 +124,8 @@ const plasmids = [
             columbia: "Wash away your enemies!"
         },
         effect: {
-            rapture: "Throws all targets in front of the user back with a burst of air",
-            columbia: "Throws all targets in front of the user back with a watery tendril"
+            rapture: "Throws all targets back with a burst of air",
+            columbia: "Throws all targets back with a watery tendril"
         },
         image: {
             rapture: "https://static.wikia.nocookie.net/bioshock/images/f/fc/97.png",
