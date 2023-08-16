@@ -42,34 +42,31 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
 
     
     return (
-        <div class="container mt-3">
+        <div>
             <h2>{rapture ? "Plasmid Creator" : "Vigor Creator"}</h2>
-            <form onSubmit={handleFormSubmit} action="/action_page.php">
-                <div name="title" class="row">
-                    <div class="col">
+            <form onSubmit={handleFormSubmit}>
+                <div name="title">
+                    <div>
                         <input
                         type="text"
-                        class="form-control"
                         placeholder="Title"
                         name={rapture ? "rapture" : "columbia"}
                         onChange={handleTitleEdit}
                         value={rapture ? newPlasmid.title.rapture : newPlasmid.title.columbia}/>
                     </div>
-                    <div class="col">
+                    <div>
                         <input
                         type="text"
-                        class="form-control"
                         placeholder="Alt Title"
                         name={rapture ? "columbia" : "rapture"}
                         onChange={handleTitleEdit}
                         value={rapture ? newPlasmid.title.columbia : newPlasmid.title.rapture}/>
                     </div>
                 </div>
-                <div name="tagline" class="row">
+                <div name="tagline">
                     <div class="col">
                         <input
                         type="text"
-                        class="form-control"
                         placeholder="Tagline"
                         name={rapture ? "rapture" : "columbia"}
                         onChange={handleTaglineEdit}
@@ -78,47 +75,42 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                     <div class="col">
                         <input
                         type="text"
-                        class="form-control"
                         placeholder="Alt Tagline"
                         name={rapture ? "columbia" : "rapture"}
                         onChange={handleTaglineEdit}
                         value={rapture ? newPlasmid.tagline.columbia : newPlasmid.tagline.rapture}/>
                     </div>
                 </div>
-                <div name="effect" class="row">
+                <div name="effect">
                     <div class="col">
                         <input
                         type="text"
-                        class="form-control"
                         placeholder="Effect"
                         name={rapture ? "rapture" : "columbia"}
                         onChange={handleEffectEdit}
                         value={rapture ? newPlasmid.effect.rapture : newPlasmid.effect.columbia}/>
                     </div>
-                    <div class="col">
+                    <div>
                         <input
                         type="text"
-                        class="form-control"
                         placeholder="Alt Effect"
                         name={rapture ? "columbia" : "rapture"}
                         onChange={handleEffectEdit}
                         value={rapture ? newPlasmid.effect.columbia : newPlasmid.effect.rapture}/>
                     </div>
                 </div>
-                <div name="image" class="row">
+                <div name="image">
                     <div class="col">
                         <input
                         type="text"
-                        class="form-control"
                         placeholder="Image URL"
                         name={rapture ? "rapture" : "columbia"}
                         onChange={handleImageEdit}
                         value={rapture ? newPlasmid.image.rapture : newPlasmid.image.columbia}/>
                     </div>
-                    <div class="col">
+                    <div>
                         <input
                         type="text"
-                        class="form-control"
                         placeholder="Alt Image URL"
                         name={rapture ? "columbia" : "rapture"}
                         onChange={handleImageEdit}
