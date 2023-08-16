@@ -37,6 +37,15 @@
   }
 }
 
+.navbarHeaders {
+  display: inline-block;
+  width: 30%;
+  padding: 12px;
+  margin: 0 6px 6px;
+  background: blue;
+  color: white;
+}
+
 /* Add spacing between tagline and effect */
 .plasmid {
   margin-bottom: 20px;
