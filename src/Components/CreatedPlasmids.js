@@ -5,10 +5,9 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     const [editFormShow, setEditFormShow] = useState(false)
     const [editedPlasmid, setEditedPlasmid] = useState(plasmid)
     const editForm = 
-    <div>
+    <div className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
         <div name="title">
             <div>
-                <label>Rapture Title:</label>
                 <input
                 type="text"
                 placeholder="Title"
@@ -17,7 +16,6 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
                 value={editedPlasmid.title.rapture}/>
             </div>
             <div>
-                <label>Columbia Title:</label>
                 <input
                 type="text"
                 placeholder="Alt Title"
@@ -28,7 +26,6 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
         </div>
         <div name="tagline">
             <div class="col">
-                <label>Rapture Tagline:</label>
                 <input
                 type="text"
                 placeholder="Tagline"
@@ -37,7 +34,6 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
                 value={editedPlasmid.tagline.rapture}/>
             </div>
             <div class="col">
-                <label>Columbia Tagline:</label>
                 <input
                 type="text"
                 placeholder="Alt Tagline"
@@ -48,7 +44,6 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
         </div>
         <div name="effect">
             <div class="col">
-                <label>Rapture Effect:</label>
                 <input
                 type="text"
                 placeholder="Effect"
@@ -57,7 +52,6 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
                 value={editedPlasmid.effect.rapture}/>
             </div>
             <div>
-                <label>Columbia Effect:</label>
                 <input
                 type="text"
                 placeholder="Alt Effect"
@@ -68,7 +62,6 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
         </div>
         <div name="image">
             <div class="col">
-                <label>Rapture Image URL:</label>
                 <input
                 type="text"
                 placeholder="Image URL"
@@ -77,7 +70,6 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
                 value={editedPlasmid.image.rapture}/>
             </div>
             <div>
-                <label>Columbia Image URL:</label>
                 <input
                 type="text"
                 placeholder="Alt Image URL"

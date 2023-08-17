@@ -18,6 +18,7 @@ function App() {
     <div className={rapture?'raptureBackground':'columbiaBackground'}>
       <NavBar
       handleRaptureToggle={handleRaptureToggle}
+      rapture={rapture}
       />
       <Switch>
         <Route exact path="/">

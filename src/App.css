@@ -37,20 +37,38 @@
   }
 }
 
-.navbar{
+.navbarRapture{
   display: flex;
   position: fixed;
   justify-content: space-evenly;
   width: 100%;
 }
 
-/* .navbarHeaders {
-  display: inline-block;
-  width: 30%;
-  padding: 12px;
-  margin: 0 6px 6px;
-  background: blue;
-  color: white;
+.navbarColumbia{
+  display: flex;
+  position: fixed;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navbarLinksRapture {
+  color:#000000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* .navbarLinksRapture:active {
+  background-color: #e52d2d;
+} */
+
+.navbarLinksColumbia {
+  color:#000000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* .navbarLinksColumbia:active {
+  background-color: #e52d2d;
 } */
 
 .mainContainer {
@@ -148,10 +166,13 @@
   font-weight: bold;
   margin: 0;
   font-size: 25px;
-  font-family: "Goudy Bookletter 1911", serif;
-  margin-top: 50px;
+  font-family: "graduate", cursive;
+  margin-top: 40px;
   color: #fde9bb;
   text-shadow: 1.5px 1.5px black;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
 }
 
 .taglineRapture {
@@ -169,20 +190,20 @@
 }
 
 .taglineColumbia {
-  color: black;
+  color: #fde9bb;
   font-weight: bold;
   position: relative;
   display: inline-block;
   text-overflow: ellipsis;
   white-space: wrap;
   text-align: -webkit-center;
-  font-family: "copperplate", fantasy;
+  font-family: 'Lobster', cursive;
   font-size: 20px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin: 35px;
   margin-top: 0px;
-  -webkit-text-stroke: 0.1px #fde9bb;
+  text-shadow: 1.5px 1.5px black;
 }
 
 .button {
