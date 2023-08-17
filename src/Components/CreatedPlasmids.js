@@ -6,77 +6,43 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     const [editedPlasmid, setEditedPlasmid] = useState(plasmid)
     const editForm = 
     <div className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
-        <div name="title">
-            <div>
-                <input
-                type="text"
-                placeholder="Title"
-                name="rapture"
-                onChange={handleTitleEdit}
-                value={editedPlasmid.title.rapture}/>
-            </div>
-            <div>
-                <input
-                type="text"
-                placeholder="Alt Title"
-                name="columbia"
-                onChange={handleTitleEdit}
-                value={editedPlasmid.title.columbia}/>
-            </div>
-        </div>
-        <div name="tagline">
-            <div class="col">
-                <input
-                type="text"
-                placeholder="Tagline"
-                name="rapture"
-                onChange={handleTaglineEdit}
-                value={editedPlasmid.tagline.rapture}/>
-            </div>
-            <div class="col">
-                <input
-                type="text"
-                placeholder="Alt Tagline"
-                name="columbia"
-                onChange={handleTaglineEdit}
-                value={editedPlasmid.tagline.columbia}/>
-            </div>
-        </div>
-        <div name="effect">
-            <div class="col">
-                <input
-                type="text"
-                placeholder="Effect"
-                name="rapture"
-                onChange={handleEffectEdit}
-                value={editedPlasmid.effect.rapture}/>
-            </div>
-            <div>
-                <input
-                type="text"
-                placeholder="Alt Effect"
-                name="columbia"
-                onChange={handleEffectEdit}
-                value={editedPlasmid.effect.columbia}/>
-            </div>
-        </div>
-        <div name="image">
-            <div class="col">
-                <input
-                type="text"
-                placeholder="Image URL"
-                name="rapture"
-                onChange={handleImageEdit}
-                value={editedPlasmid.image.rapture}/>
-            </div>
-            <div>
-                <input
-                type="text"
-                placeholder="Alt Image URL"
-                name="columbia"
-                onChange={handleImageEdit}
-                value={editedPlasmid.image.columbia}/>
-            </div>
+        <div className={rapture?"editFormRapture":"editFormColumbia"}>
+            <input
+            type="text"
+            placeholder="Title"
+            name="rapture"
+            onChange={handleTitleEdit}
+            value={editedPlasmid.title.rapture}/>
+            <input
+            type="text"
+            placeholder="Alt Title"
+            name="columbia"
+            onChange={handleTitleEdit}
+            value={editedPlasmid.title.columbia}/>
+            <input
+            type="text"
+            placeholder="Tagline"
+            name="rapture"
+            onChange={handleTaglineEdit}
+            value={editedPlasmid.tagline.rapture}/>
+            <input
+            type="text"
+            placeholder="Alt Tagline"
+            name="columbia"
+            onChange={handleTaglineEdit}
+            value={editedPlasmid.tagline.columbia}/>
+            <input
+            type="text"
+            placeholder="Image URL"
+            name="rapture"
+            onChange={handleImageEdit}
+            value={editedPlasmid.image.rapture}/>
+            <input
+            type="text"
+            placeholder="Alt Image URL"
+            name="columbia"
+            onChange={handleImageEdit}
+            value={editedPlasmid.image.columbia}/>
         </div>
     </div>
 

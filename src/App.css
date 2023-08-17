@@ -42,6 +42,9 @@
   position: fixed;
   justify-content: space-evenly;
   width: 100%;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200713/pngtree-gold-metal-texture-background-image_355342.jpg");
+  background-size: cover;
+  background-repeat:round;
 }
 
 .navbarColumbia{
@@ -49,12 +52,24 @@
   position: fixed;
   justify-content: space-evenly;
   width: 100%;
+  background-image: url("https://bradbury.com/images/ref_250_cream_400.jpg");
+  background-size: contain;
+  background-repeat:initial;
 }
 
 .navbarLinksRapture {
   color:#000000;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: broadway;
+  color: #cb9100bf;
+  -webkit-text-stroke: 1.5px #795600;
   text-decoration: none;
+  background-image: url("https://t4.ftcdn.net/jpg/02/18/47/97/360_F_218479727_gP89LrAKcNdJvIHtklm0XNElCcvgU831.jpg");
+  background-size: cover;
+  background-repeat:round;
+  border-radius: 20%;
+  border: ridge;
+  border-color: #ffd700;
 }
 
 /* .navbarLinksRapture:active {
@@ -63,8 +78,17 @@
 
 .navbarLinksColumbia {
   color:#000000;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: "graduate", cursive;
+  color: #fde9bb;
+  text-shadow: 1.5px 1.5px black;
   text-decoration: none;
+  background-image: url("https://www.stockvault.net/data/2011/04/26/122551/preview16.jpg");
+  background-size: cover;
+  background-repeat:round;
+  border-radius: 20%;
+  border: ridge;
+  border-color: #e5c892;
 }
 
 /* .navbarLinksColumbia:active {
@@ -113,14 +137,6 @@
   padding: 0.5rem 0.5rem;
   gap: 1rem;
   background-color: #E1C16E;
-  /* background:
-  linear-gradient(
-    90deg, #844414 0%,
-    #c7801d 20%,
-    #ffe233 50%,
-    #c7801d 80%,
-    #844414 100%
-  ); */
   border-radius: 10px;
   width: 250px;
   height: 400px;
@@ -166,8 +182,8 @@
   font-weight: bold;
   margin: 0;
   font-size: 25px;
-  font-family: "graduate", cursive;
   margin-top: 40px;
+  font-family: "graduate", cursive;
   color: #fde9bb;
   text-shadow: 1.5px 1.5px black;
   margin-left: 15px;
@@ -214,6 +230,8 @@
   background-color: #cbffa9;
 }
 
+/*//////////////images//////////////*/
+
 .plasmidImageRapture {
   width: 10rem;
   height: 10rem;
@@ -229,6 +247,20 @@
   border-radius: 50%;
   margin-bottom: 25px;
   border-style: solid;
+}
+
+/*////////////edit forms//////////*/
+
+.editFormRapture{
+  text-align: center;
+  display: flow;
+  margin-top: 100px;
+}
+
+.editFormColumbia{
+  text-align: center;
+  display: flow;
+  margin-top: 100px;
 }
 
 /*/////////////////////////////////////

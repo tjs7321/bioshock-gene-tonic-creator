@@ -9,25 +9,27 @@ function NavBar({handleRaptureToggle, rapture}){
             <NavLink
             className={rapture?"navbarLinksRapture":"navbarLinksColumbia"}
             to="/" exact
-            activeStyle={{background: "darkblue"}}
+            // activeStyle={{background: "lightgrey"}}
             >
             Home
             </NavLink>
             <NavLink
             className={rapture?"navbarLinksRapture":"navbarLinksColumbia"}
             to="/showroom" exact
-            activeStyle={{background: "darkblue"}}
+            // activeStyle={{background: "lightgrey"}}
             >
             Showroom
             </NavLink>
             <NavLink
             className={rapture?"navbarLinksRapture":"navbarLinksColumbia"}
             to="/creator" exact
-            activeStyle={{background: "darkblue"}}
+            // activeStyle={{background: "lightgrey"}}
             >
             Creator
             </NavLink>
-            <button onClick={handleRaptureToggle}>Toggle Columbia/Rapture</button>
+            <button
+            className="button"
+            onClick={handleRaptureToggle}>Toggle Columbia/Rapture</button>
         </nav>
         )
 }

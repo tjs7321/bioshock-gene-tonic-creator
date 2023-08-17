@@ -22,7 +22,7 @@
     {
       "id": 2,
       "title": {
-        "rapture": "Kick Grass",
+        "rapture": "Kick Grasp",
         "columbia": "Still Kicking Ass"
       },
       "tagline": {
@@ -37,6 +37,25 @@
         "rapture": "https://p1.hiclipart.com/preview/212/944/64/drawing-of-family-sheep-goat-cartoon-horn-goats-head-livestock-png-clipart.jpg",
         "columbia": "https://p1.hiclipart.com/preview/482/176/1008/family-logo-sheep-horn-goats-bighorn-argali-head-cartoon-png-clipart.jpg"
       }
+    },
+    {
+      "title": {
+        "rapture": "Fly",
+        "columbia": "Fly"
+      },
+      "tagline": {
+        "rapture": "Fly Far",
+        "columbia": "Fly Far"
+      },
+      "effect": {
+        "rapture": "",
+        "columbia": ""
+      },
+      "image": {
+        "rapture": "https://freepngimg.com/save/15778-penguin-png-images/999x1278",
+        "columbia": "https://freepngimg.com/save/15778-penguin-png-images/999x1278"
+      },
+      "id": 3
     }
   ]
 }

@@ -81,7 +81,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         value={rapture ? newPlasmid.tagline.columbia : newPlasmid.tagline.rapture}/>
                     </div>
                 </div>
-                <div name="effect">
+                {/* <div name="effect">
                     <div class="col">
                         <input
                         type="text"
@@ -98,7 +98,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         onChange={handleEffectEdit}
                         value={rapture ? newPlasmid.effect.columbia : newPlasmid.effect.rapture}/>
                     </div>
-                </div>
+                </div> */}
                 <div name="image">
                     <div class="col">
                         <input
@@ -117,7 +117,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         value={rapture ? newPlasmid.image.columbia : newPlasmid.image.rapture}/>
                     </div>
                 </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit">Submit</button>
             </form>
         </div>
     )
