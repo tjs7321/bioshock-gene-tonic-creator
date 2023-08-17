@@ -44,7 +44,7 @@ const plasmids = [
             columbia: "Murder of Crows"
         },
         tagline: {
-            rapture: "Nothing clears the room like swarms of stinging bees",
+            rapture: "Nothing clears the room like a swarm of stinging bees!",
             columbia: "Proven deterrent against hooligans"
         },
         effect: {
