@@ -31,6 +31,8 @@ The BioShock Themed React Application is a demonstration of how to leverage Reac
 
 - **Component Reusability:** Observe how to create reusable React components that encapsulate functionality and enhance code maintainability.
 
+- **Modals:** Learn how to create dynamic modal components to display YouTube videos of your choice.
+
 ## Installation
 
 1. Fork and clone this repository to your local machine using your preferred method:
