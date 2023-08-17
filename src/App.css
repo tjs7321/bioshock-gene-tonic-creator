@@ -175,3 +175,59 @@
   width: 100vw;
   height: 100vh;
 }
+
+.title-rapture {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #000000; /* Black color */
+  text-align: center;
+  margin: 0; /* Remove default margin */
+  padding: 3.5rem 0; /* Add padding for spacing */
+}
+
+.subtitle-rapture {
+  font-size: 1rem;
+  color: #FFD700; /* Gold color */
+  margin: 0.3rem 0; /* Adjust margin for spacing */
+  text-align: center;
+}
+
+.title-columbia {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #ffffff; /* White color */
+  text-align: center;
+  margin: 0; /* Remove default margin */
+  padding: 3.5rem 0; /* Add padding for spacing */
+}
+
+
+.subtitle-columbia {
+  font-size: 1rem;
+  color: #e52d2d; /* Red color */
+  margin: 0.3rem 0; /* Adjust margin for spacing */
+  text-align: center;
+}
+
+.info-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.info-card-rapture {
+  flex: 1;
+  padding: 1rem;
+ 
+  color: #FFF; /* White text color */
+  border-radius: 10px;
+  /* Add any other styling you want for Rapture */
+}
+
+.info-card-columbia {
+  flex: 1;
+  padding: 1rem;
+  color: #232200; /* Black text color */
+  border-radius: 10px;
+  /* Add any other styling you want for Columbia */
+}
