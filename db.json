@@ -56,6 +56,25 @@
         "columbia": "https://static.vecteezy.com/system/resources/previews/013/182/804/original/little-bird-watercolor-hand-paint-free-png.png"
       },
       "id": 3
+    },
+    {
+      "title": {
+        "rapture": "Power of Friendship",
+        "columbia": "Power of Friendship"
+      },
+      "tagline": {
+        "rapture": "Better together!",
+        "columbia": "Better together!"
+      },
+      "effect": {
+        "rapture": "",
+        "columbia": ""
+      },
+      "image": {
+        "rapture": "https://cdn3.whatculture.com/images/2013/08/care-bears-movie-care-bears-stare-power-600x300.jpg",
+        "columbia": "https://cdn3.whatculture.com/images/2013/08/care-bears-movie-care-bears-stare-power-600x300.jpg"
+      },
+      "id": 4
     }
   ]
 }
