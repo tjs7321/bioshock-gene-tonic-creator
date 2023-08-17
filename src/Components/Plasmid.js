@@ -9,7 +9,7 @@ function Plasmid({ rapture, title, tagline, effect, image }) {
         alt="plasmid/vigor icon"
       />
       <p className="tagline">{rapture ? tagline.rapture : tagline.columbia}</p>
-      <p className="tagline">{rapture ? effect.rapture : effect.columbia}</p>
+      {/* <p className="tagline">{rapture ? effect.rapture : effect.columbia}</p> */}
     </div>
   );
 }

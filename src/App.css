@@ -44,14 +44,14 @@
   width: 100%;
 }
 
-.navbarHeaders {
+/* .navbarHeaders {
   display: inline-block;
   width: 30%;
   padding: 12px;
   margin: 0 6px 6px;
   background: blue;
   color: white;
-}
+} */
 
 .mainContainer {
   /* background-color: #D7A184; */
@@ -66,9 +66,13 @@
 
 .title {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 50px;
   text-align: center;
-  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 50px;
+  font-family: "Century Gothic";
+  color: aliceblue;
 }
 
 .plasmidContainer {
@@ -77,8 +81,10 @@
   justify-content: space-around;
   align-items: stretch;
   gap: 0.5rem;
-  margin: 0 0.5rem;
+  margin: 50px;
   flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .plasmidCardRapture {
@@ -89,6 +95,14 @@
   padding: 0.5rem 0.5rem;
   gap: 1rem;
   background-color: #E1C16E;
+  /* background:
+  linear-gradient(
+    90deg, #844414 0%,
+    #c7801d 20%,
+    #ffe233 50%,
+    #c7801d 80%,
+    #844414 100%
+  ); */
   border-radius: 10px;
   width: 250px;
   height: 400px;
@@ -114,7 +128,7 @@
   height: 400px;
   flex-shrink: 0;
   filter: drop-shadow(1px, 2px, 0.2rem gray);
-  background-image: url("https://clipart-library.com/images/yikrkLMaT.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png/529px-Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png?20200515181509");
   background-size: cover;
   background-repeat:round;
   margin: 30px;
@@ -122,19 +136,33 @@
 
 .plasmidTitleRapture{
   font-weight: bold;
+  margin: 0;
+  font-size: 25px;
+  font-family: broadway;
+  margin-top: 50px;
+  color: #cb9100bf;
+  -webkit-text-stroke: 0.1px #795600;
 }
 
 .plasmidTitleColumbia{
   font-weight: bold;
+  margin: 0;
+  font-size: x-large;
+  font-family: broadway;
 }
 
 .tagline {
   position: relative;
   display: inline-block;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: wrap;
-  margin: 0;
+  text-align: -webkit-center;
+  font-family: brush script mt;
+  font-size: 25px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin: 35px;
+  margin-top: 0px;
 }
 
 .button {
@@ -150,6 +178,7 @@
   height: 10rem;
   object-fit: contain;
   border-radius: 50%;
+  margin-bottom: 25px;
 }
 
 /*/////////////////////////////////////
