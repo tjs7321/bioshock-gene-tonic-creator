@@ -108,7 +108,7 @@
   height: 400px;
   flex-shrink: 0;
   filter: drop-shadow(1px, 2px, 0.2rem gray);
-  background-image: url("https://openclipart.org/image/800px/233557");
+  background-image: url("https://openclipart.org/image/800px/233557"), url("https://t4.ftcdn.net/jpg/02/18/47/97/360_F_218479727_gP89LrAKcNdJvIHtklm0XNElCcvgU831.jpg");
   background-size: cover;
   background-repeat:round;
   margin: 30px;
@@ -122,13 +122,13 @@
   justify-content: space-between;
   padding: 0.5rem 0.5rem;
   gap: 1rem;
-  background-color: #fffec4;
+  background-color: #fffd75;
   border-radius: 10px;
   width: 250px;
   height: 400px;
   flex-shrink: 0;
   filter: drop-shadow(1px, 2px, 0.2rem gray);
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png/529px-Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png?20200515181509");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png/529px-Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png?20200515181509"), url("https://i.pinimg.com/originals/7e/ca/78/7eca78aef2d39f5a3529ec7173305ff7.jpg");
   background-size: cover;
   background-repeat:round;
   margin: 30px;
@@ -147,11 +147,14 @@
 .plasmidTitleColumbia{
   font-weight: bold;
   margin: 0;
-  font-size: x-large;
-  font-family: broadway;
+  font-size: 25px;
+  font-family: "Goudy Bookletter 1911", serif;
+  margin-top: 50px;
+  color: #fde9bb;
+  text-shadow: 1.5px 1.5px black;
 }
 
-.tagline {
+.taglineRapture {
   position: relative;
   display: inline-block;
   text-overflow: ellipsis;
@@ -165,6 +168,23 @@
   margin-top: 0px;
 }
 
+.taglineColumbia {
+  color: black;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  text-align: -webkit-center;
+  font-family: "copperplate", fantasy;
+  font-size: 20px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin: 35px;
+  margin-top: 0px;
+  -webkit-text-stroke: 0.1px #fde9bb;
+}
+
 .button {
   border: 0;
   padding: 0.4rem 0.9rem;
@@ -173,12 +193,21 @@
   background-color: #cbffa9;
 }
 
-.plasmidImage {
+.plasmidImageRapture {
   width: 10rem;
   height: 10rem;
   object-fit: contain;
   border-radius: 50%;
   margin-bottom: 25px;
+}
+
+.plasmidImageColumbia {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  border-style: solid;
 }
 
 /*/////////////////////////////////////
