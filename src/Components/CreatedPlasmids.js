@@ -6,6 +6,7 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     const [editedPlasmid, setEditedPlasmid] = useState(plasmid)
     const editForm = 
     <div className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
+        <h2 className={rapture?"plasmidTitleRapture":"plasmidTitleColumbia"}>{rapture ? "Plasmid Editor" : "Vigor Editor"}</h2>
         <div className={rapture?"editFormRapture":"editFormColumbia"}>
             <input
             type="text"
@@ -52,7 +53,7 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
         <img className={rapture?"plasmidImageRapture":"plasmidImageColumbia"} src={rapture ? editedPlasmid.image.rapture : editedPlasmid.image.columbia} alt="plasmid/vigor icon"/>
         <p className={rapture?"taglineRapture":"taglineColumbia"}>{rapture ? editedPlasmid.tagline.rapture : editedPlasmid.tagline.columbia}</p>
         {/* <p className="tagline">{rapture ? editedPlasmid.effect.rapture : editedPlasmid.effect.columbia}</p> */}
-        <button className="button" onClick={()=>handleClick(id)}>Delete</button>
+        
         </div>
 
     function handleTitleEdit(e){
@@ -86,10 +87,10 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     }
 
     return (
-    <div>
+    <div className={rapture?"editDeleteButtonsRapture":"editDeleteButtonsColumbia"}>
         {editFormShow ? editForm : plasmidCard}
-        <button onClick={handleEditClick}>
-            {editFormShow?"Done":"Edit"}</button>
+        <button onClick={handleEditClick}>{editFormShow?"Done":"Edit"}</button>
+        <button className="button" onClick={()=>handleClick(id)}>Delete</button>
     </div>
     )
 }

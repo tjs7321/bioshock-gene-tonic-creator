@@ -133,7 +133,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.5rem 0.5rem;
   gap: 1rem;
   background-color: #E1C16E;
@@ -153,7 +153,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.5rem 0.5rem;
   gap: 1rem;
   background-color: #fffd75;
@@ -172,8 +172,8 @@
   font-weight: bold;
   margin: 0;
   font-size: 25px;
-  font-family: broadway;
   margin-top: 50px;
+  font-family: broadway;
   color: #cb9100bf;
   -webkit-text-stroke: 0.1px #795600;
 }
@@ -230,6 +230,22 @@
   background-color: #cbffa9;
 }
 
+.toggleButtonRapture {
+  border: 0;
+  padding: 0.4rem 0.9rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #cbffa9;
+}
+
+.toggleButtonColumbia {
+  border: 0;
+  padding: 0.4rem 0.9rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #cbffa9;
+}
+
 /*//////////////images//////////////*/
 
 .plasmidImageRapture {
@@ -238,6 +254,11 @@
   object-fit: contain;
   border-radius: 50%;
   margin-bottom: 25px;
+  border-style: solid;
+  background-image: url("https://t4.ftcdn.net/jpg/02/18/47/97/360_F_218479727_gP89LrAKcNdJvIHtklm0XNElCcvgU831.jpg");
+  background-size: cover;
+  background-repeat:round;
+  border-color: #bda04f;
 }
 
 .plasmidImageColumbia {
@@ -247,6 +268,10 @@
   border-radius: 50%;
   margin-bottom: 25px;
   border-style: solid;
+  background-image: url("https://media.istockphoto.com/id/642582334/vector/vintage-paper-with-space-for-text-or-image.jpg?s=612x612&w=0&k=20&c=vWwiJ37RImyejCMQX7YvNsbP-Qg1RHvOUqoVNdXL9AQ=");
+  background-size: cover;
+  background-repeat:round;
+  border-color: #bb7b37;
 }
 
 /*////////////edit forms//////////*/
@@ -254,13 +279,15 @@
 .editFormRapture{
   text-align: center;
   display: flow;
-  margin-top: 100px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .editFormColumbia{
   text-align: center;
   display: flow;
-  margin-top: 100px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 /*/////////////////////////////////////
@@ -341,4 +368,79 @@
   color: #232200; /* Black text color */
   border-radius: 10px;
   /* Add any other styling you want for Columbia */
+}
+
+.plasmidTitleCardRapture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  gap: 1rem;
+  border-radius: 10px;
+  width: 270px;
+  height: 100px;
+  flex-shrink: 0;
+  filter: drop-shadow(1px, 2px, 0.2rem gray);
+  background-image: url("https://www.pngmart.com/files/13/Name-Plate-PNG-Transparent-HD-Photo.png");
+  background-size: cover;
+  background-repeat:round;
+  margin: 30px;
+}
+
+.plasmidMainTitleRapture{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 20px;
+  font-family: broadway;
+  color: #cb9100bf;
+  -webkit-text-stroke: 0.1px #795600;
+}
+
+
+.plasmidTitleCardColumbia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  gap: 1rem;
+  border-radius: 10px;
+  width: 350px;
+  height: 100px;
+  flex-shrink: 0;
+  filter: drop-shadow(1px, 2px, 0.2rem gray);
+  background-image: url("https://clipart-library.com/newimages/clipart-png-1.jpg");
+  background-size: cover;
+  background-repeat:round;
+  margin: 30px;
+}
+
+.plasmidMainTitleColumbia{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 20px;
+  font-family: "graduate", cursive;
+  color: #fde9bb;
+  text-shadow: 1.5px 1.5px black;
+}
+
+.editDeleteButtonsRapture{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.editDeleteButtonsColumbia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

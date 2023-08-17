@@ -28,8 +28,8 @@ function NavBar({handleRaptureToggle, rapture}){
             Creator
             </NavLink>
             <button
-            className="button"
-            onClick={handleRaptureToggle}>Toggle Columbia/Rapture</button>
+            className={rapture?"navbarLinksColumbia":"navbarLinksRapture"}
+            onClick={handleRaptureToggle}>{rapture?"Columbia":"Rapture"}</button>
         </nav>
         )
 }
