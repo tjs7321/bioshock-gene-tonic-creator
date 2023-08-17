@@ -1,70 +1,66 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
-In the project directory, you can run:
+# BioShock Themed React Application
 
-### `npm start`
+Welcome to the BioShock Themed React Application! This project is a showcase of how to build a web application using React.js, inspired by the iconic BioShock game series. Immerse yourself in the world of web development while paying homage to the captivating BioShock universe.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm test`
+## Introduction
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The BioShock Themed React Application is a demonstration of how to leverage React's power to create engaging and dynamic web interfaces. Drawing inspiration from the distinct visual and narrative style of BioShock, this project showcases various React concepts, making it an excellent educational resource for both beginners and experienced developers.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **BioShock Aesthetics:** Experience the visual flair of the BioShock universe with the application's thematic design, reminiscent of Rapture and Columbia.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Interactive Elements:** Explore interactive components that mimic the immersive gameplay of BioShock, such as embedded videos and interactive UI elements.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **State Management:** Learn how to manage application state using React's state and props, providing a smooth and responsive user experience.
 
-### `npm run eject`
+- **Routing:** Discover how to implement routing within a single-page application using React Router, allowing for seamless navigation between different sections.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Component Reusability:** Observe how to create reusable React components that encapsulate functionality and enhance code maintainability.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Fork and clone this repository to your local machine using your preferred method:
+```
+git clone https://github.com/tjs7321/phase-2-group-project-bioshock
+```
+2. Navigate to the project directory in your terminal:
+```
+cd phase-2-group-project-bioshock
+```
+3. Install the project's dependencies:
+```
+npm install
+```
+4. Start the development server for the React app:
+```
+npm start
+```
+5. Open a new terminal window and navigate to the project directory again.
+6. Start the JSON Server to serve mock data:
+```
+npm run server
+```
+7. Open your web browser and visit `http://localhost:3000` to see the application in action. The JSON Server will be running on `http://localhost:3001` and providing mock data to the app.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Explore the various components, pages, and interactions within the application. This project serves as a learning resource, so feel free to examine the code and experiment with modifications to gain a deeper understanding of React development.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dive into the world of web development with a BioShock twist. Explore the realms of React.js while paying homage to the captivating BioShock universe. Immerse yourself in code and creativity!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Disclaimer: This project is inspired by the BioShock game series but is not officially associated with the BioShock franchise or its creators.*
