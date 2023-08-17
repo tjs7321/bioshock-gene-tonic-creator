@@ -146,6 +146,7 @@
   background-size: cover;
   background-repeat:round;
   margin: 30px;
+  margin-bottom: 10px;
 }
 
 
@@ -166,6 +167,7 @@
   background-size: cover;
   background-repeat:round;
   margin: 30px;
+  margin-bottom: 10px;
 }
 
 .plasmidTitleRapture{
@@ -281,6 +283,7 @@
   display: flow;
   margin-top: 40px;
   margin-bottom: 80px;
+  align-items: center;
 }
 
 .editFormColumbia{
@@ -288,6 +291,7 @@
   display: flow;
   margin-top: 40px;
   margin-bottom: 80px;
+  align-items: center;
 }
 
 /*/////////////////////////////////////
@@ -431,16 +435,84 @@
   text-shadow: 1.5px 1.5px black;
 }
 
+.editDeleteButtonsDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .editDeleteButtonsRapture{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  width: 70px;
+  height: 20px;
+  background-image: url("https://www.pngmart.com/files/13/Name-Plate-PNG-Transparent-HD-Photo.png");
+  background-size: cover;
+  background-repeat:round;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: broadway;
+  color: #cb9100bf;
+  -webkit-text-stroke: 0.1px #795600;
 }
 
 .editDeleteButtonsColumbia{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  width: 85px;
+  height: 17px;
+  background-image: url("https://clipart-library.com/newimages/clipart-png-1.jpg");
+  background-size: cover;
+  background-repeat:round;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: "graduate", cursive;
+  color: #fde9bb;
+  text-shadow: 1.5px 1.5px black;
+}
+
+.submitButtonRapture{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  width: 80px;
+  height: 20px;
+  background-image: url("https://www.pngmart.com/files/13/Name-Plate-PNG-Transparent-HD-Photo.png");
+  background-size: cover;
+  background-repeat:round;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: broadway;
+  color: #cb9100bf;
+  -webkit-text-stroke: 0.1px #795600;
+}
+
+.submitButtonColumbia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  width: 170px;
+  height: 40px;
+  background-image: url("https://clipart-library.com/newimages/clipart-png-1.jpg");
+  background-size: cover;
+  background-repeat:round;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "graduate", cursive;
+  color: #fde9bb;
+  text-shadow: 1.5px 1.5px black;
+  border:none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
 }

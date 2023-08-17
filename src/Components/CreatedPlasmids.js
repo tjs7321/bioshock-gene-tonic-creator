@@ -87,10 +87,18 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     }
 
     return (
-    <div className={rapture?"editDeleteButtonsRapture":"editDeleteButtonsColumbia"}>
+    <div>
         {editFormShow ? editForm : plasmidCard}
-        <button onClick={handleEditClick}>{editFormShow?"Done":"Edit"}</button>
-        <button className="button" onClick={()=>handleClick(id)}>Delete</button>
+        <div  className="editDeleteButtonsDiv">
+            <div
+            className={rapture?"editDeleteButtonsRapture":"editDeleteButtonsColumbia"}
+            onClick={handleEditClick}
+            >{editFormShow?"Done":"Edit"}</div>
+            <div
+            className={rapture?"editDeleteButtonsRapture":"editDeleteButtonsColumbia"}
+            onClick={()=>handleClick(id)}
+            >Delete</div>
+        </div>
     </div>
     )
 }

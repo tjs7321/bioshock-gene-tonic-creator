@@ -49,6 +49,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                     <div name="title">
                         <div>
                             <input
+                            required
                             type="text"
                             placeholder="Title"
                             name={rapture ? "rapture" : "columbia"}
@@ -57,6 +58,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         </div>
                         <div>
                             <input
+                            required
                             type="text"
                             placeholder="Alt Title"
                             name={rapture ? "columbia" : "rapture"}
@@ -67,6 +69,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                     <div name="tagline">
                         <div class="col">
                             <input
+                            required
                             type="text"
                             placeholder="Tagline"
                             name={rapture ? "rapture" : "columbia"}
@@ -75,6 +78,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         </div>
                         <div class="col">
                             <input
+                            required
                             type="text"
                             placeholder="Alt Tagline"
                             name={rapture ? "columbia" : "rapture"}
@@ -103,6 +107,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                     <div name="image">
                         <div class="col">
                             <input
+                            required
                             type="text"
                             placeholder="Image URL"
                             name={rapture ? "rapture" : "columbia"}
@@ -111,6 +116,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         </div>
                         <div>
                             <input
+                            required
                             type="text"
                             placeholder="Alt Image URL"
                             name={rapture ? "columbia" : "rapture"}
@@ -118,7 +124,10 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                             value={rapture ? newPlasmid.image.columbia : newPlasmid.image.rapture}/>
                         </div>
                     </div>
-                <button type="submit">Submit</button>
+                <button
+                className={rapture?"submitButtonRapture":"submitButtonColumbia"}
+                type="submit"
+                >Submit</button>
                 </form>
             </div>
         </div>
