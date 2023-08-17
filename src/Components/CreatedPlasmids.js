@@ -5,40 +5,52 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     const [editFormShow, setEditFormShow] = useState(false)
     const [editedPlasmid, setEditedPlasmid] = useState(plasmid)
     const editForm = 
-    <div className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
+    <div style={{cursor:"auto"}} className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
         <h2 className={rapture?"plasmidTitleRapture":"plasmidTitleColumbia"}>{rapture ? "Plasmid Editor" : "Vigor Editor"}</h2>
         <div className={rapture?"editFormRapture":"editFormColumbia"}>
             <input
+            style={{margin:"3px"}}
+            required
             type="text"
             placeholder="Title"
             name="rapture"
             onChange={handleTitleEdit}
             value={editedPlasmid.title.rapture}/>
             <input
+            style={{margin:"3px"}}
+            required
             type="text"
             placeholder="Alt Title"
             name="columbia"
             onChange={handleTitleEdit}
             value={editedPlasmid.title.columbia}/>
             <input
+            style={{margin:"3px"}}
+            required
             type="text"
             placeholder="Tagline"
             name="rapture"
             onChange={handleTaglineEdit}
             value={editedPlasmid.tagline.rapture}/>
             <input
+            style={{margin:"3px"}}
+            required
             type="text"
             placeholder="Alt Tagline"
             name="columbia"
             onChange={handleTaglineEdit}
             value={editedPlasmid.tagline.columbia}/>
             <input
+            style={{margin:"3px"}}
+            required
             type="text"
             placeholder="Image URL"
             name="rapture"
             onChange={handleImageEdit}
             value={editedPlasmid.image.rapture}/>
             <input
+            style={{margin:"3px"}}
+            required
             type="text"
             placeholder="Alt Image URL"
             name="columbia"
@@ -48,7 +60,7 @@ function CreatedPlasmids({rapture, baseURL, plasmid, id, handleClick}){
     </div>
 
     const plasmidCard =
-    <div className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
+    <div style={{cursor:"auto"}} className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
         <h1 className={rapture?"plasmidTitleRapture":"plasmidTitleColumbia"}>{rapture ? editedPlasmid.title.rapture : editedPlasmid.title.columbia}</h1>
         <img className={rapture?"plasmidImageRapture":"plasmidImageColumbia"} src={rapture ? editedPlasmid.image.rapture : editedPlasmid.image.columbia} alt="plasmid/vigor icon"/>
         <p className={rapture?"taglineRapture":"taglineColumbia"}>{rapture ? editedPlasmid.tagline.rapture : editedPlasmid.tagline.columbia}</p>

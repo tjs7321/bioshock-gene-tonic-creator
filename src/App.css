@@ -147,6 +147,7 @@
   background-repeat:round;
   margin: 30px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 
@@ -168,13 +169,14 @@
   background-repeat:round;
   margin: 30px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .plasmidTitleRapture{
   font-weight: bold;
   margin: 0;
   font-size: 25px;
-  margin-top: 50px;
+  margin-top: 65px;
   font-family: broadway;
   color: #cb9100bf;
   -webkit-text-stroke: 0.1px #795600;
@@ -458,6 +460,7 @@
   font-family: broadway;
   color: #cb9100bf;
   -webkit-text-stroke: 0.1px #795600;
+  cursor: pointer;
 }
 
 .editDeleteButtonsColumbia{
@@ -476,6 +479,7 @@
   font-family: "graduate", cursive;
   color: #fde9bb;
   text-shadow: 1.5px 1.5px black;
+  cursor: pointer;
 }
 
 .submitButtonRapture{
@@ -483,8 +487,8 @@
   flex-direction: column;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  width: 80px;
-  height: 20px;
+  width: 170px;
+  height: 40px;
   background-image: url("https://www.pngmart.com/files/13/Name-Plate-PNG-Transparent-HD-Photo.png");
   background-size: cover;
   background-repeat:round;
@@ -494,6 +498,9 @@
   font-family: broadway;
   color: #cb9100bf;
   -webkit-text-stroke: 0.1px #795600;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
 }
 
 .submitButtonColumbia{
@@ -515,4 +522,154 @@
   border:none;
   outline: none;
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+
+
+/*testing video*/
+.modal__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 0.19);
+  backdrop-filter: blur(6px);
+  opacity: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  z-index: 100;
+}
+
+.modal__align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal__content {
+  width: 800px;
+  height: 500px;
+  box-shadow: 0px 100px 80px rgba(184, 184, 184, 0.07),
+    0px 25.8162px 19px 4px rgba(178, 178, 178, 0.0456112),
+    0px 7.779px 7.30492px rgba(0, 0, 0, 0.035),
+    0px 1.48838px 2.0843px rgba(0, 0, 0, 0.0243888);
+  border-radius: 20px;
+  background: transparent;
+  color: #000;
+  margin: 0rem 4rem;
+}
+
+.modal__closeRapture {
+  background-image: url("https://t4.ftcdn.net/jpg/02/18/47/97/360_F_218479727_gP89LrAKcNdJvIHtklm0XNElCcvgU831.jpg");
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  bottom: 50px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.modal__closeColumbia {
+  background-image: url("https://st2.depositphotos.com/1541589/6838/i/450/depositphotos_68387699-stock-photo-vintage-brown-background.jpg");
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  bottom: 50px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.modal__video-align {
+  display: flex;
+  position: relative;
+  bottom: 37px;
+}
+
+.modal__video-styleRapture {
+  border-radius: 25px;
+  padding: 20px;
+  z-index: 100;
+  border-color: #bb7b37;
+  border: 30px solid transparent;
+  border-image: url("./Art-Deco-PNG-File.png");
+  border-image-repeat: stretch;
+  border-image-slice: 10% fill;
+  background-image: url("https://t4.ftcdn.net/jpg/02/18/47/97/360_F_218479727_gP89LrAKcNdJvIHtklm0XNElCcvgU831.jpg");
+}
+
+.modal__video-styleColumbia {
+  border-radius: 25px;
+  padding: 20px;
+  z-index: 100;
+  border-color: #bb7b37;
+  border: 25px solid transparent;
+  border-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png/529px-Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png?20200515181509");
+  border-image-repeat: stretch;
+  border-image-slice: 10% fill;
+  background-image: url("https://i.pinimg.com/originals/7e/ca/78/7eca78aef2d39f5a3529ec7173305ff7.jpg");
+  background-size: cover;
+}
+
+.modal__spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__spinner {
+  animation: spin 2s linear infinite;
+  font-size: 40px;
+  color: #1b6aae;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modal__content {
+    margin: 0rem 1rem;
+    width: 100%;
+  }
+  .modal__video-style {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .modal__content {
+    background: transparent;
+    height: auto;
+  }
+  .modal__video-align {
+    bottom: 0px;
+  }
+  .modal__video-style {
+    height: auto;
+  }
+}
+
+input{
+  font-family: emoji;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  color: #00000086;
+  border-color: rgba(255, 255, 255, 0.5);
 }

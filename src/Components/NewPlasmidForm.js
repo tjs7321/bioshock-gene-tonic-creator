@@ -42,13 +42,14 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
 
     
     return (
-        <div className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
+        <div style={{cursor:"auto"}} className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
             <h2 className={rapture?"plasmidTitleRapture":"plasmidTitleColumbia"}>{rapture ? "Plasmid Creator" : "Vigor Creator"}</h2>
             <div className={rapture?"editFormRapture":"editFormColumbia"}>
                 <form onSubmit={handleFormSubmit}>
                     <div name="title">
                         <div>
                             <input
+                            style={{margin:"3px"}}
                             required
                             type="text"
                             placeholder="Title"
@@ -58,6 +59,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         </div>
                         <div>
                             <input
+                            style={{margin:"3px"}}
                             required
                             type="text"
                             placeholder="Alt Title"
@@ -69,6 +71,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                     <div name="tagline">
                         <div class="col">
                             <input
+                            style={{margin:"3px"}}
                             required
                             type="text"
                             placeholder="Tagline"
@@ -78,6 +81,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         </div>
                         <div class="col">
                             <input
+                            style={{margin:"3px"}}
                             required
                             type="text"
                             placeholder="Alt Tagline"
@@ -107,6 +111,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                     <div name="image">
                         <div class="col">
                             <input
+                            style={{margin:"3px"}}
                             required
                             type="text"
                             placeholder="Image URL"
@@ -116,6 +121,7 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
                         </div>
                         <div>
                             <input
+                            style={{margin:"3px"}}
                             required
                             type="text"
                             placeholder="Alt Image URL"

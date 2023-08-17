@@ -16,6 +16,10 @@ const plasmids = [
         image: {
             rapture: "https://static.wikia.nocookie.net/bioshock/images/3/35/Electro.png",
             columbia: "https://static.wikia.nocookie.net/bioshock/images/f/fe/ShockJockeyIcon.png"
+        },
+        video:{
+            rapture: "https://www.youtube.com/embed/eqLSZGRJDjc",
+            columbia: "https://www.youtube.com/embed/rPM11kJPDQo"
         }
     },
     {
@@ -35,6 +39,10 @@ const plasmids = [
         image: {
             rapture: "https://static.wikia.nocookie.net/bioshock/images/6/6b/Inc.png",
             columbia: "https://static.wikia.nocookie.net/bioshock/images/a/ad/DevilsKissIcon.png"
+        },
+        video:{
+            rapture: "https://www.youtube.com/embed/NaLQNRdH0Xw",
+            columbia: "https://www.youtube.com/embed/8yVmueGn2PE"
         }
     },
     {
@@ -54,6 +62,10 @@ const plasmids = [
         image: {
             rapture: "https://static.wikia.nocookie.net/bioshock/images/7/79/Insect.png",
             columbia: "https://static.wikia.nocookie.net/bioshock/images/3/34/MurderOfCrowsIcon.png"
+        },
+        video:{
+            rapture: "https://www.youtube.com/embed/xdiESyriaD8",
+            columbia: "https://www.youtube.com/embed/OYR41QPrfVA"
         }
     },
     {
@@ -73,6 +85,10 @@ const plasmids = [
         image: {
             rapture: "https://static.wikia.nocookie.net/bioshock/images/0/01/Cryo.png",
             columbia: "https://static.wikia.nocookie.net/bioshock/images/f/f9/Old_Man_Winter_Icon.png"
+        },
+        video:{
+            rapture: "https://www.youtube.com/embed/PyVpocd99dQ",
+            columbia: "https://www.youtube.com/embed/ZmwD68mbiRk"
         }
     },
     {
@@ -92,6 +108,10 @@ const plasmids = [
         image: {
             rapture: "https://static.wikia.nocookie.net/bioshock/images/a/a9/Trap.png",
             columbia: "https://static.wikia.nocookie.net/bioshock/images/e/ea/BuckingBroncoIcon.png"
+        },
+        video:{
+            rapture: "https://www.youtube.com/embed/c-cs3HWvGxw",
+            columbia: "https://www.youtube.com/embed/BF7dAWqOF4E"
         }
     },
     {
@@ -111,6 +131,10 @@ const plasmids = [
         image: {
             rapture: "https://static.wikia.nocookie.net/bioshock/images/9/9b/Befriend.png",
             columbia: "https://static.wikia.nocookie.net/bioshock/images/2/23/PossessionIcon.png"
+        },
+        video:{
+            rapture: "https://www.youtube.com/embed/QD2KM4t-hXw",
+            columbia: "https://www.youtube.com/embed/vZHq-xFPF_4"
         }
     },
     {
@@ -130,16 +154,20 @@ const plasmids = [
         image: {
             rapture: "https://static.wikia.nocookie.net/bioshock/images/f/fc/97.png",
             columbia: "https://static.wikia.nocookie.net/bioshock/images/a/ac/UndertowIcon.png"
+        },
+        video:{
+            rapture: "https://www.youtube.com/embed/wCdwDuXSoqY",
+            columbia: "https://www.youtube.com/embed/tSO_4R4Twds"
         }
     },
     {
         id: 8,
         title: {
-            rapture: "Aero Dash",
+            rapture: "Telekinesis",
             columbia: "Charge"
         },
         tagline: {
-            rapture: "Run like the wind!",
+            rapture: "Move big stuff with your mind!",
             columbia: "Hit hard, hit fast!"
         },
         effect: {
@@ -147,8 +175,12 @@ const plasmids = [
             columbia: "Pulls the user towards a target at ramming speed"
         },
         image: {
-            rapture: "https://static.wikia.nocookie.net/bioshock/images/f/fa/Areo_Dash.png",
+            rapture: "https://static.wikia.nocookie.net/bioshock/images/3/38/Telekenesisi.png",
             columbia: "https://static.wikia.nocookie.net/bioshock/images/9/9a/ChargeIcon.png"
+        },
+        video:{
+            rapture: "https://www.youtube.com/embed/Hc3Mjmbkrf4",
+            columbia: "https://www.youtube.com/embed/8DwhD-yto-0"
         }
     },
 ]
