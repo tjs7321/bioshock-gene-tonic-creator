@@ -42,83 +42,100 @@ function NewPlasmidForm({rapture, baseURL, addNewPlasmid}){
 
     
     return (
-        <div>
-            <h2>{rapture ? "Plasmid Creator" : "Vigor Creator"}</h2>
-            <form onSubmit={handleFormSubmit}>
-                <div name="title">
-                    <div>
-                        <input
-                        type="text"
-                        placeholder="Title"
-                        name={rapture ? "rapture" : "columbia"}
-                        onChange={handleTitleEdit}
-                        value={rapture ? newPlasmid.title.rapture : newPlasmid.title.columbia}/>
+        <div style={{cursor:"auto"}} className={rapture?"plasmidCardRapture":"plasmidCardColumbia"}>
+            <h2 className={rapture?"plasmidTitleRapture":"plasmidTitleColumbia"}>{rapture ? "Plasmid Creator" : "Vigor Creator"}</h2>
+            <div className={rapture?"editFormRapture":"editFormColumbia"}>
+                <form onSubmit={handleFormSubmit}>
+                    <div name="title">
+                        <div>
+                            <input
+                            style={{margin:"3px"}}
+                            required
+                            type="text"
+                            placeholder="Title"
+                            name={rapture ? "rapture" : "columbia"}
+                            onChange={handleTitleEdit}
+                            value={rapture ? newPlasmid.title.rapture : newPlasmid.title.columbia}/>
+                        </div>
+                        <div>
+                            <input
+                            style={{margin:"3px"}}
+                            required
+                            type="text"
+                            placeholder="Alt Title"
+                            name={rapture ? "columbia" : "rapture"}
+                            onChange={handleTitleEdit}
+                            value={rapture ? newPlasmid.title.columbia : newPlasmid.title.rapture}/>
+                        </div>
                     </div>
-                    <div>
-                        <input
-                        type="text"
-                        placeholder="Alt Title"
-                        name={rapture ? "columbia" : "rapture"}
-                        onChange={handleTitleEdit}
-                        value={rapture ? newPlasmid.title.columbia : newPlasmid.title.rapture}/>
+                    <div name="tagline">
+                        <div class="col">
+                            <input
+                            style={{margin:"3px"}}
+                            required
+                            type="text"
+                            placeholder="Tagline"
+                            name={rapture ? "rapture" : "columbia"}
+                            onChange={handleTaglineEdit}
+                            value={rapture ? newPlasmid.tagline.rapture : newPlasmid.tagline.columbia}/>
+                        </div>
+                        <div class="col">
+                            <input
+                            style={{margin:"3px"}}
+                            required
+                            type="text"
+                            placeholder="Alt Tagline"
+                            name={rapture ? "columbia" : "rapture"}
+                            onChange={handleTaglineEdit}
+                            value={rapture ? newPlasmid.tagline.columbia : newPlasmid.tagline.rapture}/>
+                        </div>
                     </div>
-                </div>
-                <div name="tagline">
-                    <div class="col">
-                        <input
-                        type="text"
-                        placeholder="Tagline"
-                        name={rapture ? "rapture" : "columbia"}
-                        onChange={handleTaglineEdit}
-                        value={rapture ? newPlasmid.tagline.rapture : newPlasmid.tagline.columbia}/>
+                    {/* <div name="effect">
+                        <div class="col">
+                            <input
+                            type="text"
+                            placeholder="Effect"
+                            name={rapture ? "rapture" : "columbia"}
+                            onChange={handleEffectEdit}
+                            value={rapture ? newPlasmid.effect.rapture : newPlasmid.effect.columbia}/>
+                        </div>
+                        <div>
+                            <input
+                            type="text"
+                            placeholder="Alt Effect"
+                            name={rapture ? "columbia" : "rapture"}
+                            onChange={handleEffectEdit}
+                            value={rapture ? newPlasmid.effect.columbia : newPlasmid.effect.rapture}/>
+                        </div>
+                    </div> */}
+                    <div name="image">
+                        <div class="col">
+                            <input
+                            style={{margin:"3px"}}
+                            required
+                            type="text"
+                            placeholder="Image URL"
+                            name={rapture ? "rapture" : "columbia"}
+                            onChange={handleImageEdit}
+                            value={rapture ? newPlasmid.image.rapture : newPlasmid.image.columbia}/>
+                        </div>
+                        <div>
+                            <input
+                            style={{margin:"3px"}}
+                            required
+                            type="text"
+                            placeholder="Alt Image URL"
+                            name={rapture ? "columbia" : "rapture"}
+                            onChange={handleImageEdit}
+                            value={rapture ? newPlasmid.image.columbia : newPlasmid.image.rapture}/>
+                        </div>
                     </div>
-                    <div class="col">
-                        <input
-                        type="text"
-                        placeholder="Alt Tagline"
-                        name={rapture ? "columbia" : "rapture"}
-                        onChange={handleTaglineEdit}
-                        value={rapture ? newPlasmid.tagline.columbia : newPlasmid.tagline.rapture}/>
-                    </div>
-                </div>
-                <div name="effect">
-                    <div class="col">
-                        <input
-                        type="text"
-                        placeholder="Effect"
-                        name={rapture ? "rapture" : "columbia"}
-                        onChange={handleEffectEdit}
-                        value={rapture ? newPlasmid.effect.rapture : newPlasmid.effect.columbia}/>
-                    </div>
-                    <div>
-                        <input
-                        type="text"
-                        placeholder="Alt Effect"
-                        name={rapture ? "columbia" : "rapture"}
-                        onChange={handleEffectEdit}
-                        value={rapture ? newPlasmid.effect.columbia : newPlasmid.effect.rapture}/>
-                    </div>
-                </div>
-                <div name="image">
-                    <div class="col">
-                        <input
-                        type="text"
-                        placeholder="Image URL"
-                        name={rapture ? "rapture" : "columbia"}
-                        onChange={handleImageEdit}
-                        value={rapture ? newPlasmid.image.rapture : newPlasmid.image.columbia}/>
-                    </div>
-                    <div>
-                        <input
-                        type="text"
-                        placeholder="Alt Image URL"
-                        name={rapture ? "columbia" : "rapture"}
-                        onChange={handleImageEdit}
-                        value={rapture ? newPlasmid.image.columbia : newPlasmid.image.rapture}/>
-                    </div>
-                </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <button
+                className={rapture?"submitButtonRapture":"submitButtonColumbia"}
+                type="submit"
+                >Submit</button>
+                </form>
+            </div>
         </div>
     )
 }

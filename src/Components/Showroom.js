@@ -6,7 +6,9 @@ function Showroom({ rapture }) {
 
   return(
     <div className="mainContainer">
-      <p className="title">{rapture?"Plasmids":"Vigors"}</p>
+      <div className={rapture?"plasmidTitleCardRapture":"plasmidTitleCardColumbia"}>
+      <p className={rapture?"plasmidMainTitleRapture":"plasmidMainTitleColumbia"}>{rapture?"Plasmids":"Vigors"}</p>
+      </div>
       <div className="plasmidContainer">
           {plasmids.map((plasmid) => <Plasmid
           rapture={rapture}

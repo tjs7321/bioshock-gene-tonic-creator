@@ -2,32 +2,34 @@ import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css";
 
-function NavBar({handleRaptureToggle}){
+function NavBar({handleRaptureToggle, rapture}){
 
     return (
-        <nav className="navbar">
+        <nav className={rapture?"navbarRapture":"navbarColumbia"}>
             <NavLink
+            className={rapture?"navbarLinksRapture":"navbarLinksColumbia"}
             to="/" exact
-            // className="navbarHeaders"
-            activeStyle={{background: "darkblue"}}
+            // activeStyle={{background: "lightgrey"}}
             >
             Home
             </NavLink>
             <NavLink
+            className={rapture?"navbarLinksRapture":"navbarLinksColumbia"}
             to="/showroom" exact
-            // className="navbarHeaders"
-            activeStyle={{background: "darkblue"}}
+            // activeStyle={{background: "lightgrey"}}
             >
             Showroom
             </NavLink>
             <NavLink
+            className={rapture?"navbarLinksRapture":"navbarLinksColumbia"}
             to="/creator" exact
-            // className="navbarHeaders"
-            activeStyle={{background: "darkblue"}}
+            // activeStyle={{background: "lightgrey"}}
             >
             Creator
             </NavLink>
-            <button onClick={handleRaptureToggle}>Toggle Columbia/Rapture</button>
+            <button
+            className={rapture?"navbarLinksColumbia":"navbarLinksRapture"}
+            onClick={handleRaptureToggle}>{rapture?"Columbia":"Rapture"}</button>
         </nav>
         )
 }
