@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-## Available Scripts
-
 # BioShock Gene Tonic Creator
 
 Welcome to the BioShock Gene Tonic Creator! This project is a showcase of how to build a web application using React.js, inspired by the iconic BioShock game series. Immerse yourself in the world of web development while paying homage to the captivating BioShock universe.
