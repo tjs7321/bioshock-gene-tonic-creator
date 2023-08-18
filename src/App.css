@@ -350,6 +350,7 @@
 
 
 .subtitle-columbia {
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 1rem;
   color: #e52d2d; /* Red color */
   margin: 0.3rem 0; /* Adjust margin for spacing */
@@ -366,7 +367,7 @@
   font-family: 'Copperplate', Fantasy; /* Apply Copperplate font */
   flex: 1;
   padding: 1rem;
-  color: #8b7600; /* Gold color */
+  color: #cfb72d; /* Gold color */
   border-radius: 10px;
   opacity: 0; /* Set initial opacity to 0 */
   transition: opacity 1s ease-in-out; /* Add transition for opacity */
@@ -380,7 +381,7 @@
 
 
 .info-card-columbia {
-  font-family: 'Garamond', serif; /* Apply Garamond font */
+  font-family: 'Righteous', cursive;
   flex: 1;
   padding: 1rem;
   color: #232200; /* Black text color */
