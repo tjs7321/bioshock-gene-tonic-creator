@@ -177,7 +177,7 @@
 }
 
 .title-rapture {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Impact', sans-serif;
   font-size: 2rem;
   color: #000000; /* Black color */
   text-align: center;
@@ -188,12 +188,12 @@
 .subtitle-rapture {
   font-size: 1rem;
   color: #FFD700; /* Gold color */
-  margin: 0.3rem 0; /* Adjust margin for spacing */
+  margin: -11px 0 ; /* Adjust margin for spacing */
   text-align: center;
 }
 
 .title-columbia {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Brush Script MT', cursive; /* Apply Brush Script MT font */
   font-size: 2rem;
   color: #ffffff; /* White color */
   text-align: center;
@@ -212,7 +212,7 @@
 .info-sections {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin: 2rem auto; /* Adjust margin as needed */
 }
 
 .info-card-rapture {
@@ -221,6 +221,8 @@
  
   color: #FFF; /* White text color */
   border-radius: 10px;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 1s ease-in-out; /* Add transition for opacity */
   /* Add any other styling you want for Rapture */
 }
 
@@ -229,5 +231,25 @@
   padding: 1rem;
   color: #232200; /* Black text color */
   border-radius: 10px;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 1s ease-in-out; /* Add transition for opacity */
   /* Add any other styling you want for Columbia */
+}
+
+
+/* Add a fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 10s ease-in-out forwards; /* Adjust animation duration as needed */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
