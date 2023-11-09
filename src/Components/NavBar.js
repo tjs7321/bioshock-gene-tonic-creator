@@ -6,16 +6,16 @@ function NavBar({handleRaptureToggle, rapture}){
 
     return (
         <nav className={rapture?"navbarRapture":"navbarColumbia"}>
-            <NavLink
+            {/* <NavLink
             className={rapture?"navbarLinksRapture":"navbarLinksColumbia"}
             to="/" exact
             // activeStyle={{background: "lightgrey"}}
             >
             Home
-            </NavLink>
+            </NavLink> */}
             <NavLink
             className={rapture?"navbarLinksRapture":"navbarLinksColumbia"}
-            to="/showroom" exact
+            to="/" exact
             // activeStyle={{background: "lightgrey"}}
             >
             Showroom

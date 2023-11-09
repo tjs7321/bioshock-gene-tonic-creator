@@ -21,12 +21,12 @@ function App() {
       rapture={rapture}
       />
       <Switch>
-        <Route exact path="/">
+        {/* <Route exact path="/">
           <Home
           rapture={rapture}
           />
-        </Route>
-        <Route path="/showroom">
+        </Route> */}
+        <Route exact path="/">
           <Showroom
           rapture={rapture}
           />
